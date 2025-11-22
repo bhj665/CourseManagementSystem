@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<title>Lisää toteutuksia - Peppi</title>
+</head>
+<body>
+<h1>Lisää toteutuksia</h1>
+<p>Suositukset</p>
+<p>Periodi</p>
+<p>Kieli</p>
+<p>Tutkinto</p>
+<p>Paikka</p>
+<p>Opintotyyli</p>
+<tr th:each="course : ${courses}">
+<td th:text="${course.name}"></td>
+<td th:text="${course.period}"></td>
+<td th:text="${course.points}"></td>
+</tr>
+</body>
+</html>
