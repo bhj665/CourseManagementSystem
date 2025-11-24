@@ -2,6 +2,7 @@
 <html lang="fi">
 <head>
 <title>Lisää toteutuksia - Peppi</title>
+<script src="Functions.js"></script>
 </head>
 <body>
 <h1>Lisää toteutuksia</h1>
@@ -12,9 +13,11 @@
 <p>Paikka</p>
 <p>Opintotyyli</p>
 <tr th:each="course : ${courses}">
-<td th:text="${course.name}"></td>
-<td th:text="${course.period}"></td>
-<td th:text="${course.points}"></td>
+<p th:text="${course.name}"></p>
+<p th:text="${course.period}"></p>
+<p th:text="${course.points}"></p>
+<p>Täyttää edeltävyydet</p>
+<input type="submit" value="Lisää suunnitelmaan" />
 </tr>
 </body>
 </html>
